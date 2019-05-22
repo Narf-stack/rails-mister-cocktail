@@ -1,0 +1,24 @@
+<div class="container text-center">
+  <div>
+    <h1><%= @cocktail.name %></h1>
+  </div>
+  <div class="big-prod" >
+    <% @cocktail.doses.each do |dose| %>
+      <div class="card-product">
+
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" >
+          <div class="card-product-infos">
+            <h2> <strong> <%= dose.ingredient.name %> </strong> </h2>
+            <h3><%= dose.description %></h3>
+            <p><%= link_to "delete", dose_path(dose),
+                      method: :delete,
+                      data: { confirm: "Are you sure?" } %></p>
+          </div>
+
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail.id)  %>
+

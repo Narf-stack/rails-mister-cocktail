@@ -1,0 +1,69 @@
+body{
+  background-color: rgb(254,208,0);
+}
+h1{
+  font-size: 36px;
+  line-height: 1.25;
+  font-family: GTSuperDisplay, sans-serif;
+  font-weight: 900;
+  white-space: pre-line;
+  letter-spacing: -0.2px;
+  margin-bottom: 45px;
+  text-transform: capitalize;
+}
+
+h2{
+  font-family: CentraNo2, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+}
+
+
+h3{
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: CentraNo2, sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  margin: 0 auto;
+  max-width: 760px;
+  text-transform: capitalize;
+}
+
+.big-prod{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.card-product {
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.card-product img {
+  height: 60%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+  width: 100%;
+  height: 40%;
+}
