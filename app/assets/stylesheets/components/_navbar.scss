@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: linear-gradient(#e3b79a, #fdd630);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -14,6 +14,6 @@
 
 .nav-item a {
   &:hover {
-
+    color: red;
   }
 }

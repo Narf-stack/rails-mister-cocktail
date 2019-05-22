@@ -8,6 +8,8 @@
       <%= f.association :ingredients, as: :select, class:"form-controls" %>
       <%= f.association :doses, as: :text %>
       <%= f.submit "add a cocktail", class: "btn btn-primary" %>
+      <%= f.input :photo %>
+       <%= f.input :photo_cache, as: :hidden %>
     <% end %>
   </div>
 </div>
